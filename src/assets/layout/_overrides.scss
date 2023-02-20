@@ -1,0 +1,467 @@
+//Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
+
+.dummy {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+}
+
+.p-datatable-wrapper {
+    overflow-y: hidden;
+}
+
+.p-column-header-content {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+.dialog-footer-button {
+    margin-top: 20px;
+}
+
+.comment-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+
+    .range-slider {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: #dee2e6;
+        outline: none;
+
+        .progress {
+            height: 100%;
+            background-color: #6366f1;
+            position: absolute;
+        }
+
+        .range-input {
+            position: absolute;
+            top: -7px;
+            left: -2px;
+            width: 100%;
+            -webkit-appearance: none;
+            pointer-events: none;
+            background: none;
+            outline: none;
+        }
+
+        input::-webkit-slider-thumb {
+            pointer-events: auto;
+            -webkit-appearance: none;
+            width: 12px;
+            height: 12px;
+            background: #6366f1;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.time-settings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+}
+
+.settings-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-header {
+    padding: 1rem 0.5rem;
+}
+
+.table-settings {
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+}
+
+.settings-content {
+    .settings-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .setting-name {
+            margin: 0;
+        }
+    }
+}
+
+.setting-button {
+    margin: 0.3rem;
+    border-radius: 2rem;
+}
+
+.upload-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-buttons {
+    display: flex;
+}
+
+.upload-inputs {
+    display: flex;
+}
+
+.calendars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // margin-bottom: 1.5rem;
+    // margin-right: -0.5rem;
+    // margin-left: -0.5rem;
+
+    .calendars-block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .calendar-label {
+        margin: 0 1rem 0 0;
+    }
+}
+
+.p-calendar {
+    width: 12rem;
+}
+
+.p-column-title {
+    width: 100%;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    display: grid;
+    // position: relative;
+    // padding-right: 2rem;
+}
+
+.p-datatable-resizable .p-datatable-tfoot > tr > td,
+.p-datatable-resizable .p-datatable-tbody > tr > td {
+    white-space: normal;
+    overflow: visible;
+}
+
+.p-datatable-resizable .p-datatable-thead > tr > th {
+    overflow: visible !important;
+}
+
+.p-frozen-column {
+    .p-column-title {
+        padding: 0;
+    }
+}
+
+.custom-icon {
+    padding: 0.4rem !important;
+    font-size: 1.2rem !important;
+    color: #343a40 !important;
+
+    svg {
+        transition: color 0.3s ease;
+    }
+
+    &:active {
+        background-color: transparent !important;
+    }
+    &:hover {
+        background-color: transparent !important;
+        svg {
+            color: #6366f1;
+        }
+    }
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
+
+.preset-option-button {
+    width: 2.5rem !important;
+    padding: 0.5rem !important;
+    margin-left: 2rem !important;
+}
+
+.login-error-message {
+    margin-top: 1rem;
+    min-height: 1.5rem;
+    color: #e24c4c;
+}
+
+.draggable-card {
+    &.is-draggable {
+        cursor: move;
+    }
+}
+
+.hideable {
+    transition: width 0.3s ease-in;
+    &.edit-hidden {
+        width: 0rem;
+        visibility: hidden;
+    }
+    &.edit-active {
+        width: 27rem;
+    }
+}
+
+.white-tooltip.p-tooltip .p-tooltip-arrow {
+    border-top-color: #f8f9fa;
+}
+.white-tooltip.p-tooltip .p-tooltip-text {
+    background-color: #f8f9fa;
+}
+
+.p-datatable-scrollable .p-datatable-thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.p-frozen-column {
+    z-index: 1;
+}
+
+.error-message {
+    color: red;
+}
+
+.p-toast-top-left {
+    top: 90px;
+    left: 20px;
+}
+
+.p-virtualscroller-content {
+    padding-bottom: 3.5rem;
+    // position: sticky;
+    // top: 0 !important;
+}
+
+.p-datatable .p-datatable-loading-overlay {
+    z-index: 3;
+}
+
+.p-datatable.infinite-scrolling .p-datatable-loading-overlay {
+    background-color: transparent;
+}
+
+.p-datatable.combowidget-datatable {
+    font-size: 0.8rem;
+    .p-datatable-thead > tr > th {
+        padding: 0.8rem;
+    }
+}
+
+.p-menubar-root-list {
+    margin: 0 auto !important;
+}
+
+.tablescheme-block {
+    // width: 84px;
+    top: 0;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0.8;
+    // transition: left 2s, opacity 0.2s ease;
+    user-select: none;
+
+    &.draggable:hover {
+        opacity: 1;
+    }
+
+    .tablescheme-segment {
+        margin: 0.2rem;
+        border-radius: 0.5rem;
+        position: relative;
+
+        .color-mask {
+            position: absolute;
+            border-radius: 0.5rem;
+            width: 103%;
+            height: 103%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &.color-mask-button {
+                border-radius: 2rem;
+                z-index: 1;
+            }
+        }
+
+        &.header {
+            flex: 4;
+            background: var(--surface-c);
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                font-weight: 800;
+                font-size: 0.9rem;
+                position: relative;
+                z-index: 2;
+            }
+
+            .color-button {
+                position: absolute;
+                z-index: 1;
+                bottom: calc(0px - 1.5rem);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.1rem;
+                padding-top: 0.3rem;
+                padding-left: 0.1rem;
+                border-radius: 2rem;
+                background: var(--surface-c);
+                cursor: pointer;
+
+                svg {
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+        &.body {
+            flex: 25;
+            background: var(--surface-b);
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            align-items: center;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+
+            span {
+                padding: 1.4rem 0.8rem;
+                // border-radius: 0.7rem;
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: center;
+                // box-shadow: -4px 0 0px 0px rgba(0, 0, 10, 0);
+                // background: var(--surface-b);
+                // transition: all 0.5s ease;
+            }
+        }
+        &.footer {
+            flex: 2;
+            background: var(--surface-c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .delete-button {
+                position: absolute;
+                z-index: 1;
+                top: calc(0px - 1rem);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2rem;
+                height: 2rem;
+                font-size: 0.8rem;
+                // padding-top: 0.3rem;
+                // padding-left: 0.1rem;
+                border-radius: 2rem;
+                background: var(--surface-c);
+                cursor: pointer;
+
+                svg {
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
+
+.color-tooltip.p-tooltip {
+    .p-tooltip-arrow {
+        border-bottom-color: white;
+    }
+    .p-tooltip-text {
+        background-color: white;
+    }
+}
+
+.color-tooltip-colorblock {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+
+    .colorblock {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    }
+}
+
+.ultra-small-button {
+    height: 2rem !important;
+    width: 2rem !important;
+    padding: 0.75rem 0 !important;
+
+    .p-button-icon {
+        font-size: 1rem !important;
+    }
+}
+
+.widget {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+
+    &.draggable {
+        cursor: move;
+    }
+}
